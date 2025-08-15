@@ -1,0 +1,274 @@
+/* Generales */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #fff9f9;
+}
+
+/*  logo */
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    width: 60px; 
+    height: auto;
+    margin-right: 15px; 
+}
+
+/* Encabezado */
+header {
+    background-color: #ff9aa2;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+/* Barra  */
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #ffb7b2;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Secciones */
+section {
+    padding: 30px 20px;
+    text-align: center;
+    background-color: white;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    color: #ff9aa2;
+}
+
+/* Galería de imágenes */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.image-item {
+    margin: 10px;
+    text-align: center;
+}
+
+.image-item img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.image-item img:hover {
+    transform: scale(1.05);
+}
+
+.image-item p {
+    margin: 5px 0 0;
+    font-weight: bold;
+}
+
+/* Botón de WhatsApp */
+.whatsapp-button {
+    background-color: #25D366;
+    color: white;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    display: inline-block;
+    margin: 20px auto;
+    transition: background-color 0.3s ease;
+}
+
+.whatsapp-button:hover {
+    background-color: #128C7E;
+}
+
+/* Botón de Añadir al Carrito */
+.add-to-cart {
+    background-color: #ff9aa2;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.add-to-cart:hover {
+    background-color: #ff7b89;
+}
+
+/* Pie de página */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #ff9aa2;
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Espacio en la parte de abajo del carrito */
+#cartContainer {
+    margin-bottom: 150px;
+}
+
+/* Carrito tipo factura */
+.cart-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.cart-icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.cart-title {
+    color: #ff9aa2;
+    font-size: 2em;
+    font-weight: bold;
+    margin: 0;
+}
+
+.cart-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto 20px auto;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(255, 154, 162, 0.1);
+}
+
+.cart-table th, .cart-table td {
+    border: 1px solid #ffb7b2;
+    padding: 8px;
+    text-align: center;
+}
+
+.cart-table th {
+    background-color: #ffb7b2;
+    color: white;
+}
+
+.cart-table tfoot td {
+    font-size: 1.1em;
+    font-weight: bold;
+    background-color: #fff0f0;
+}
+
+.qr-section {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.qr-img {
+    width: 120px;
+    height: 120px;
+    margin-top: 10px;
+}
+
+.info-pago {
+    margin: 20px auto 0 auto;
+    padding: 15px 20px;
+    background: #fff0f0;
+    border: 2px solid #ff9aa2;
+    border-radius: 8px;
+    max-width: 400px;
+    text-align: center;
+    font-size: 1.1em;
+    color: #333;
+}
+
+/* Ventana de registro de usuario */
+.registro-usuario {
+    background: #fff0f0;
+    border: 2px solid #ff9aa2;
+    border-radius: 8px;
+    max-width: 400px;
+    margin: 30px auto 20px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.registro-usuario input {
+    width: 90%;
+    padding: 8px;
+    margin: 8px 0;
+    border-radius: 4px;
+    border: 1px solid #ffb7b2;
+}
+
+.registro-usuario button {
+    background-color: #ff9aa2;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* Tabs de usuario */
+.tabs-usuario {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.tab-btn {
+    background: #ffb7b2;
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 8px 8px 0 0;
+    margin: 0 2px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.tab-btn.active {
+    background: #ff9aa2;
+    color: #fff;
+}

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repostería Dulce Tentación</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="tabs-usuario">
+        <button id="btnRegistro" class="tab-btn active">Registro</button>
+        <button id="btnLogin" class="tab-btn">Ingresar</button>
+    </div>
+    <div id="registroUsuario" class="registro-usuario">
+        <h2>Registro de Usuario</h2>
+        <form id="formRegistro">
+            <input type="text" name="nombre" placeholder="Nombre" required>
+            <input type="tel" name="telefono" placeholder="Teléfono" required>
+            <button type="submit">Registrarse</button>
+        </form>
+        <div id="registroMensaje"></div>
+    </div>
+    <div id="loginUsuario" class="registro-usuario">
+        <h2>Ingresar para ver pedidos</h2>
+        <form id="formLogin">
+            <input type="text" name="nombre" placeholder="Nombre" required>
+            <input type="tel" name="telefono" placeholder="Teléfono" required>
+            <button type="submit">Ver mis pedidos</button>
+        </form>
+        <div id="loginMensaje"></div>
+        <div id="pedidosAnteriores"></div>
+    </div>
+    <header>
+    <div class="header-content">
+        <img src="images/LOGOFRESASCONCREMA.png" alt="Logo" class="logo">
+
+        <h1> DULCE TENTACIÓN</h1>
+    </div>
+    </header>
+    <nav>
+        <a href="#sabores">Sabores</a>
+        <a href="#combinaciones">Combinaciones</a>
+        <a href="#galeria">Galería</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+    <section id="sabores">
+        <h2>Sabores</h2>
+        <p>Disfruta de nuestros deliciosos sabores.</p>
+        <div class="gallery">
+            <div class="image-item">
+                <img src="images/CREMA1.jpeg" alt="Fresas con Crema">
+                <p>Fresas con Crema</p>
+                <p class="precio">$5.000</p>
+                <button class="add-to-cart" onclick="addToCart('Fresas con Crema', 5000)">Añadir al Carrito</button>
+            </div>
+            <div class="image-item">
+                <img src="images/CREMAYCHOCOLATE.jpeg" alt="Maní">
+                <p>Maní</p>
+                <p class="precio">$6.000</p>
+                <button class="add-to-cart" onclick="addToCart('Maní', 6000)">Añadir al Carrito</button>
+            </div>
+            <div class="image-item">
+                <img src="images/CRISPIS.jpeg" alt="Crema y Chocolate">
+                <p>Crema y Chocolate</p>
+                <p class="precio">$7.000</p>
+                <button class="add-to-cart" onclick="addToCart('Crema y Chocolate', 7000)">Añadir al Carrito</button>
+            </div>
+        </div>
+    </section>
+    <section id="combinaciones">
+        <h2>Combinaciones</h2>
+        <p>Prueba nuestras increíbles combinaciones.</p>
+        <div class="gallery">
+            <div class="image-item">
+                <img src="images/MELOCOTON.jpeg" alt="Crema y Melocotón">
+                <p>Crema y Melocotón</p>
+                <p class="precio">$8.000</p>
+                <button class="add-to-cart" onclick="addToCart('Crema y Melocotón', 8000)">Añadir al Carrito</button>
+            </div>
+            <div class="image-item">
+                <img src="images/QUIPITO.jpeg" alt="Combinación Quipito">
+                <p>Combinación Quipito</p>
+                <p class="precio">$9.000</p>
+                <button class="add-to-cart" onclick="addToCart('Combinación Quipito', 9000)">Añadir al Carrito</button>
+            </div>
+        </div>
+    </section>
+    <section id="galeria">
+        <h2>Galería</h2>
+        <div class="gallery">
+            <img src="images/JUMBO.jpeg" alt="Repostería 1">
+            <img src="images/CHOCORRAMO.jpeg" alt="Repostería 2">
+            <img src="images/CHISPAS.jpeg" alt="Repostería 3">
+        </div>
+    </section>
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <a id="whatsappLink" href="#" class="whatsapp-button">Hacer Pedido por WhatsApp</a>
+        <div id="cartContainer">
+            <div class="cart-header">
+                <img src="images/cart-icon.png" alt="Carrito" class="cart-icon">
+                <h3 class="cart-title">Factura de tu Pedido</h3>
+            </div>
+            <table class="cart-table">
+                <thead>
+                    <tr>
+                        <th>Producto</th>
+                        <th>Precio</th>
+                    </tr>
+                </thead>
+                <tbody id="cartItems"></tbody>
+                <tfoot>
+                    <tr>
+                        <td><strong>Total</strong></td>
+                        <td id="cartTotal">$0</td>
+                    </tr>
+                </tfoot>
+            </table>
+            <div class="qr-section">
+                <p>Escanea para pagar:</p>
+                <img src="images/qr.png" alt="QR de pago" class="qr-img">
+            </div>
+            <div class="info-pago">
+    <p>
+        <strong>Para recibir tu pago:</strong><br>
+        Manda al botón de <span class="whatsapp-highlight">Hacer Pedido por WhatsApp</span> tu lista de pedido y el comprobante de pago.
+    </p>
+</div>
+<button id="btnGuardarPedido" class="add-to-cart">Guardar Pedido</button>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2025 FRESAS Y CREMA Dulce Tentación</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
